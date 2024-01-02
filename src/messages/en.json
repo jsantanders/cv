@@ -1,0 +1,103 @@
+{
+  "name": "Jesus Santander",
+  "sections":{
+    "about": "About",
+    "workExperience": "Work Experience",
+    "education": "Education",
+    "certifications": "Certifications",
+    "publications": "Publications",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "about": "Node | React | .NET Senior Software Engineer. Distributed systems enthusiast",
+  "summary": "I am a seasoned full-stack web developer with over 7 years of expertise in scalable architectures, distributed computing, cloud infrastructure, and web applications. Proficient in .NET, Node, Azure, and React. Curious, self-motivated, and interested in learning and mastering new technologies to overcome unique challenges.",
+  "education": {
+    "bachelor": {
+      "school": "University of Carabobo",
+      "degree": "B.Eng. Telecommunication Engineer"
+    },
+    "master": {
+      "school":"University of Carabobo",
+      "degree": "MSc. Applied Mathematics"
+    } 
+  },
+  "certifications": {
+    "azure": {
+      "issuer": "Microsoft",
+      "title": "Azure Developer - Associate"
+    }
+  },
+  "publications": {
+    "1": {
+      "title": "Letter to the editor: Procedure for access to the ERS and ENVISAT missiondata through the ESA portal and the interactive tool EOLI-SA",
+      "publisher": "Revista Ingeniería UC"
+    }
+  },
+  "work": {
+    "laika" : {
+      "title": "Senior Software Engineer",
+      "description": {
+        "1": "Crafted a comprehensive microservice migration plan to dismantle a monolithic system, boosting reliability.",
+        "2": "Optimized product search quality, accuracy, and response time by implementing Algolia as the search service.",
+        "3": "Developed a collaborative filtering recommendation system, boosting sales and enhancing product visibility."
+      }
+    },
+    "microsoft" : {
+      "title": "Senior Software Engineer",
+      "description": {
+        "1": "Created mission-critical React components for the new MVP site focused on accessibility and performance.",
+        "2": "Established Azure Cognitive Search indexes, enhancing the precision of text-based queries.",
+        "3": "Enhanced Microsoft MVP application performance by optimizing Entity Framework queries, minimizing database data retrieval and client-side data transmission for increased eficiency."
+      }
+    },
+    "alphas" : {
+      "title": "Senior Software Engineer → Lead Software Engineer",
+      "description": {
+        "1": "Accelerated data processing from minutes to seconds by optimizing distributed systems with RabbitMQ and MassTransit, enhancing operational eﬀiciency.",
+        "2": "Refactored legacy systems into modern microservices using Azure technologies like App Service, Storage, Service Bus, Functions, CosmosDB, and Active Directory, boosting system performance by up to 40%.",
+        "3": "Transferred an HTTP API from a VM to Azure App Service, cutting infrastructure costs by approximately 15%."
+      }
+    },
+    "ferrisoft" : {
+      "title": "Software Engineer",
+      "description": {
+        "1": "Implemented a WCF 3rd party service secured with an SSL certificate for compliance with a gov institution.",
+        "2": "Improved Entity Framework performance by 30%. Removing unnecessary tracking on read-only queries."
+      }
+    },
+    "navicu": {
+      "title": "Software Engineer",
+      "description": {
+        "1": "Developed Node.js BFFs for web and mobile apps, customizing API clients to their specific requirements."
+      }
+    },
+    "tecfenix": {
+      "title": "Software Engineer", 
+      "description":{
+        "1": "Achieved a 20% throughput improvement by migrating a backend API from .NET Framework to .NET Core 1.1."
+      }
+    }
+  },
+  "projects": {
+    "blog": {
+      "title": "jsantanders.dev",
+      "description": "My personal website and blog. Built with Next.js and MDX"
+    },
+    "learning": {
+      "title": "learning.jsantanders.dev",
+      "description": "Solutions to problems found in books I’m reading"
+    },
+    "ddd": {
+      "title": "modular-monolith-nestjs",
+      "description": "A Modular Monolith application with Domain-Driven Design approach. Using NestJS as a backend framework."
+    }
+  },
+  "switcher": {
+    "label": "Change language",
+    "en": "English",
+    "es": "Spanish"
+  },
+  "present": "Present",
+  "seeMore": "See more",
+  "seeLess": "See less"
+}
