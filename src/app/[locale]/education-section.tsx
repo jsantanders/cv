@@ -25,7 +25,7 @@ export const EducationSection = () => {
                 <CardContent>{education.degree}</CardContent>
               </Card>
             </div>
-            <div className="text-sm tabular-nums text-muted-foreground">
+            <div className="text-end text-sm tabular-nums text-muted-foreground">
               {education.start} - {education.end}
             </div>
           </div>

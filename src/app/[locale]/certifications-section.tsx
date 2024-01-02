@@ -32,7 +32,7 @@ export const CertificationsSection = () => {
                 <CardContent>{cert.title}</CardContent>
               </Card>
             </div>
-            <div className="text-sm tabular-nums text-muted-foreground">{cert.date}</div>
+            <div className="text-end text-sm tabular-nums text-muted-foreground">{cert.date}</div>
           </div>
         );
       })}

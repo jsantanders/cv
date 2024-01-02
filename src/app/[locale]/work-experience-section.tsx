@@ -74,7 +74,7 @@ export const WorkExperienceSection = (props: Props) => {
                     <h4 className="font-mono text-sm leading-none">{work.title}</h4>
                   </div>
                 </div>
-                <div className="text-sm tabular-nums text-muted-foreground">
+                <div className="text-end text-sm tabular-nums text-muted-foreground">
                   {work.start} - {work.end}
                 </div>
               </div>
