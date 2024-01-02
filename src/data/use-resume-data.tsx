@@ -1,5 +1,5 @@
 import LaikaLogo from "@/images/logos/laika-logo.png";
-import MicrosoftLogo from "@/images/logos/Microsoft-logo.png";
+import MicrosoftLogo from "@/images/logos/microsoft-logo.png";
 import AlphasLogo from "@/images/logos/alphas-logo.png";
 import FerrisoftLogo from "@/images/logos/ferrisoft-logo.png";
 import NavicuLogo from "@/images/logos/navicu-logo.png";
