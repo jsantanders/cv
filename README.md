@@ -1,6 +1,6 @@
 # Credits
 
-![Bartosz Jarocki](https://github.com/BartoszJarocki/cv/)
+[Bartosz Jarocki](https://github.com/BartoszJarocki/cv/)
 
 # Minimalist CV
 
