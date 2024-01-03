@@ -21,7 +21,7 @@ export const PublicationsSection = () => {
               </div>
             </CardHeader>
             <CardContent className="mt-2">
-              <Link target="_blank" href={pub.link}>
+              <Link className="hover:underline" target="_blank" href={pub.link}>
                 {pub.title}
               </Link>
             </CardContent>

@@ -96,7 +96,7 @@ export const useResumeData = () => {
       {
         company: "Microsoft",
         link: "https://www.linkedin.com/company/microsoft",
-        badges: ["Remote"],
+        badges: ["Remote", "Vendor"],
         title: t("work.microsoft.title"),
         logo: MicrosoftLogo,
         start: "Apr 2021",
@@ -152,7 +152,15 @@ export const useResumeData = () => {
         description: [t("work.tecfenix.description.1")],
       },
     ],
-    skills: ["JavaScript", "TypeScript", "React/Next.js/Remix", "Node.js", ".NET/C#/ASP.NET", "Go"],
+    skills: [
+      "JavaScript",
+      "TypeScript",
+      "React/Next.js/Remix",
+      "Node.js",
+      ".NET/C#/ASP.NET",
+      "Go",
+      "Rust",
+    ],
     projects: [
       {
         title: t("projects.blog.title"),

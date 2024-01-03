@@ -22,7 +22,7 @@ export const CertificationsSection = () => {
                   <div className="flex flex-row items-center gap-x-1">
                     <div>
                       <h3 className="font-semibold leading-none">
-                        <Link target="_blank" href={cert.link}>
+                        <Link className="hover:underline" target="_blank" href={cert.link}>
                           {cert.issuer}
                         </Link>
                       </h3>
