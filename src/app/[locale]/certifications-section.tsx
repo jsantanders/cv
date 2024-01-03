@@ -21,15 +21,15 @@ export const CertificationsSection = () => {
                 <CardHeader>
                   <div className="flex flex-row items-center gap-x-1">
                     <div>
-                      <h3 className="font-semibold leading-none">
-                        <Link className="hover:underline" target="_blank" href={cert.link}>
-                          {cert.issuer}
-                        </Link>
-                      </h3>
+                      <h3 className="font-semibold leading-none">{cert.issuer}</h3>
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent>{cert.title}</CardContent>
+                <CardContent>
+                  <Link className="hover:underline" target="_blank" href={cert.link}>
+                    {cert.title}
+                  </Link>
+                </CardContent>
               </Card>
             </div>
             <div className="text-end text-sm tabular-nums text-muted-foreground">{cert.date}</div>
