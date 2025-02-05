@@ -15,7 +15,11 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
 });
 
-const spaceMono = Space_Mono({ weight: "400", variable: "--font-space-mono" });
+const spaceMono = Space_Mono({
+  weight: "400",
+  variable: "--font-space-mono",
+  subsets: ["latin"],
+});
 
 export default async function RootLayout({
   params,
