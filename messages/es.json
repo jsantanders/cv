@@ -1,0 +1,134 @@
+{
+  "name": "Jesús Santander",
+  "sections": {
+    "about": "Acerca de mi",
+    "workExperience": "Experiencia laboral",
+    "education": "Educación",
+    "certifications": "Certificaciones",
+    "publications": "Publicaciones",
+    "skills": "Habilidades",
+    "projects": "Proyectos"
+  },
+  "remote": "Remoto",
+  "about": "Ingeniero de Software Senior en Node | React | .NET. Entusiasta de los sistemas distribuidos",
+  "summary": "Soy un desarrollador full-stack con más de 10 años de experiencia en computación distribuida, arquitecturas escalables, cloud y aplicaciones web.",
+  "education": {
+    "bachelor": {
+      "school": "Universidad de Carabobo",
+      "degree": "Ing. en Telecomunicaciones"
+    },
+    "master": {
+      "school": "Universidad de Carabobo",
+      "degree": "MSc. en Matemáticas Aplicadas"
+    }
+  },
+  "certifications": {
+    "azure": {
+      "issuer": "Microsoft",
+      "title": "Desarrollador de Azure - Asociado"
+    }
+  },
+  "publications": {
+    "1": {
+      "title": "Carta al editor: Procedimiento para acceder a los datos de las misiones ERS y ENVISAT a través del portal de la ESA y la herramienta interactiva EOLI-SA",
+      "publisher": "Revista Ingeniería UC"
+    }
+  },
+  "work": {
+    "rollkall": {
+      "title": "Ingeniero de Software Senior",
+      "description": {
+        "1": "Desarrollé componentes React responsivos para el Portal de Oficiales, permitiendo a los oficiales acceder a funciones esenciales en dispositivos donde las aplicaciones móviles están restringidas.",
+        "2": "Desarrollé endpoints en ASP.NET y procedimientos almacenados en SQL para migrar el sistema de facturación, mejorando la funcionalidad y asegurando una transición fluida.",
+        "3": "Migré la pantalla de \"Ubicaciones\" en el Portal del Cliente, corrigiendo errores y manteniendo la consistencia en todos los portales web."
+      }
+    },
+    "laika": {
+      "title": "Ingeniero de Software Senior",
+      "description": {
+        "1": "Desarrollé el nuevo flujo de registro de mascotas en la aplicación React Native, lo que resultó en un aumento del 20% en el número de usuarios que categorizan a sus mascotas, permitiendo al equipo de marketing crear campañas de correo electrónico más dirigidas y ofertas de descuento en la aplicación.",
+        "2": "Contribuí a la migración de una aplicación monolítica en PHP a una arquitectura de microservicios (Node.js + Nest) utilizando Docker y AWS Fargate, reduciendo el tiempo de inactividad y mejorando la escalabilidad.",
+        "3": "Mejoré la funcionalidad de búsqueda facetada y autocompletado de Algolia, mejorando la precisión de la búsqueda y reduciendo el tiempo de respuesta."
+      }
+    },
+    "microsoft": {
+      "title": "Ingeniero de Software Senior",
+      "description": {
+        "1": "Desarrollé componentes React accesibles utilizando técnicas como el renderizado del lado del servidor y la carga diferida, contribuyendo a la reducción del tiempo de carga de la página y al aumento de la puntuación de accesibilidad del sitio web.",
+        "2": "Configuré características de Azure Cognitive Search como el ranking semántico y el mapeo de sinónimos para mejorar la precisión de las consultas basadas en texto dentro de la aplicación.",
+        "3": "Implementé optimizaciones en Entity Framework Core, incluyendo la desactivación del seguimiento de cambios para consultas de solo lectura y la minimización de la carga diferida, optimizando las interacciones con los datos y mejorando el rendimiento de la aplicación."
+      }
+    },
+    "alphas": {
+      "title": "Ingeniero de Software Senior → Líder de Ingeniería de Software",
+      "description": {
+        "1": "Reduje el tiempo de procesamiento de datos implementando un sistema de colas de mensajes con RabbitMQ, permitiendo el procesamiento paralelo y optimizando la utilización de recursos. Esto resultó en un aumento del 30% en la capacidad de procesamiento.",
+        "2": "Refactoricé un sistema heredado en una arquitectura moderna de microservicios utilizando tecnologías de Azure como App Service, Storage, Service Bus, Functions, CosmosDB y AD B2C. Esta migración mejoró el rendimiento del sistema, reduciendo significativamente los tiempos de respuesta y permitiendo una mayor escalabilidad.",
+        "3": "Trasladé una API de ASP.NET que maneja picos de 500 solicitudes concurrentes desde una VM on-premise a Azure App Service, logrando una reducción del 15% en los costos y una mayor escalabilidad a través del escalado automático y el balanceo de carga.",
+        "4": "Aseguré el intercambio de datos con el departamento de impuestos de Colombia (DIAN) configurando un servicio WCF. Esto implicó la implementación de cifrado SSL, autenticación de usuarios y mecanismos de control de acceso, asegurando el cumplimiento de estrictas regulaciones de privacidad de datos."
+      }
+    },
+    "ferrisoft": {
+      "title": "Ingeniero de Software",
+      "description": {
+        "1": "Optimicé consultas de Entity Framework para una aplicación de estación de trabajo WPF de alto tráfico, lo que resultó en una mejora del rendimiento y una reducción en el tiempo de respuesta promedio. Esto se logró desactivando el seguimiento de cambios para operaciones de solo lectura, implementando caché de consultas y aprovechando procedimientos almacenados para consultas frecuentes."
+      }
+    },
+    "navicu": {
+      "title": "Ingeniero de Software",
+      "description": {
+        "1": "Desarrollé y personalicé BFFs (Backend for Frontend) en Node.js para aplicaciones web y móviles, adaptando los clientes API a sus necesidades específicas de datos y rendimiento.",
+        "2": "Realicé una normalización de la base de datos MySQL, que incluyó la división de tablas, la creación de claves foráneas y la limpieza de datos, lo que llevó a una reducción en la inconsistencia de los datos."
+      }
+    },
+    "tecfenix": {
+      "title": "Ingeniero de Software",
+      "description": {
+        "1": "Logré una mejora del 20% en el rendimiento migrando una API backend de .NET Framework a .NET Core 1.1.",
+        "2": "Desarrollé un escáner de códigos QR en C# para el sistema de gestión de almacenes de la empresa utilizando la biblioteca ImageSharp, optimizando la identificación de productos y la gestión de inventario."
+      }
+    }
+  },
+  "projects": {
+    "blog": {
+      "title": "jsantanders.dev",
+      "description": "Mi sitio web personal y blog. Construido con Next.js y MDX"
+    },
+    "learning": {
+      "title": "learning.jsantanders.dev",
+      "description": "Soluciones a problemas encontrados en libros que estoy leyendo"
+    },
+    "ddd": {
+      "title": "modular-monolith-nestjs",
+      "description": "Una aplicación de Monolito Modular con enfoque de Diseño Dirigido por el Dominio. Utilizando NestJS como framework backend."
+    }
+  },
+  "switcher": {
+    "label": "Cambiar idioma",
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "present": "Presente",
+  "seeMore": "Ver más",
+  "seeLess": "Ver menos",
+  "theme": {
+    "label": "Cambiar tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "months": {
+    "jan": "Ene",
+    "feb": "Feb",
+    "mar": "Mar",
+    "apr": "Abr",
+    "may": "May",
+    "jun": "Jun",
+    "jul": "Jul",
+    "ago": "Ago",
+    "sep": "Sep",
+    "oct": "Oct",
+    "nov": "Nov",
+    "dec": "Dic"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "name": "Jesus Santander",
+  "sections": {
+    "about": "About",
+    "workExperience": "Work Experience",
+    "education": "Education",
+    "certifications": "Certifications",
+    "publications": "Publications",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "remote": "Remote",
+  "about": "Node | React | .NET Senior Software Engineer. Distributed systems enthusiast",
+  "summary": "I am a full-stack developer with over 10 years of expertise in distributed computing, scalable architectures, cloud, and web applications.",
+  "education": {
+    "bachelor": {
+      "school": "University of Carabobo",
+      "degree": "B.Eng. Telecommunication Engineer"
+    },
+    "master": {
+      "school": "University of Carabobo",
+      "degree": "MSc. Applied Mathematics"
+    }
+  },
+  "certifications": {
+    "azure": {
+      "issuer": "Microsoft",
+      "title": "Azure Developer - Associate"
+    }
+  },
+  "publications": {
+    "1": {
+      "title": "Letter to the editor: Procedure for access to the ERS and ENVISAT missiondata through the ESA portal and the interactive tool EOLI-SA",
+      "publisher": "Revista Ingeniería UC"
+    }
+  },
+  "work": {
+    "rollkall": {
+      "title": "Senior Software Engineer",
+      "description": {
+        "1": "Built responsive React components for the Officer Portal, enabling officers to access essential features on devices where mobile apps are restricted.",
+        "2": "Developed asp.net endpoints and SQL stored procedures to migrate the invoicing system, improving functionality and ensuring a smooth transition.",
+        "3": "Migrated the \"Locations\" screen in the Client Portal, addressing bugs and maintaining consistency across all the web portals."
+      }
+    },
+    "laika": {
+      "title": "Senior Software Engineer",
+      "description": {
+        "1": "Developed the new pet registration flow in the React Native app, resulting in a 20% increase in the number of users who categorize their pets, enabling the marketing team to create more targeted email campaigns and in-app offer discounts.",
+        "2": "Contributed into the migration of a monolithic PHP application to a microservices (Node.js + Nest) architecture using Docker and AWS Fargate, reducing downtime and improving scalability.",
+        "3": "Improved the Algolia faceted search and auto-complete functionality, improving search accuracy and reducing response time."
+      }
+    },
+    "microsoft": {
+      "title": "Senior Software Engineer",
+      "description": {
+        "1": "Developed accessible React components using techniques like server-side rendering, and lazy-loading, contributing to reduction in page load time and increase in website accessibility score.",
+        "2": "Configured Azure Cognitive Search features like semantic ranking and synonym mapping to enhance text-based query precision within the application.",
+        "3": "Implemented Entity Framework Core optimizations, including disabling change tracking for read-only queries and minimizing lazy loading, streamlining data interactions and improving application performance."
+      }
+    },
+    "alphas": {
+      "title": "Senior Software Engineer → Lead Software Engineer",
+      "description": {
+        "1": "Reduced data processing time by implementing a message queuing system with RabbitMQ, enabling parallel processing and optimizing resource utilization. This resulted in a 30% increase in processing capacity.",
+        "2": "Refactored a legacy system into a modern microservices architecture using Azure technologies like App Service, Storage, Service Bus, Functions, CosmosDB, and AD B2C. This migration boosted system performance, significantly reducing response times and enabling enhanced scalability.",
+        "3": "Transferred an ASP.NET API handling 500 concurrent requests peak from an on-premise VM to Azure App Service, achieving a 15% cost reduction and enhanced scalability through automatic scaling and load balancing.",
+        "4": "Secured data exchange with the Colombian tax department (DIAN)   by configuring a WCF service. This involved implementing SSL encryption, user authentication, and access control mechanisms, ensuring adherence to strict data privacy regulations."
+      }
+    },
+    "ferrisoft": {
+      "title": "Software Engineer",
+      "description": {
+        "1": "Optimized Entity Framework queries for a high-traffic WPF workstation application, resulting in performance improvement and a reduction in average response time. This was achieved by disabling change tracking for read-only operations, implementing query caching, and leveraging stored procedures for frequently used queries."
+      }
+    },
+    "navicu": {
+      "title": "Software Engineer",
+      "description": {
+        "1": "Developed and customized Node.js BFFs (Backend for Frontend) for both web and mobile applications, tailoring API clients to their specific data and performance needs. ",
+        "2": "Performed a MySQL database normalization, involving table splitting, foreign key creation, and data cleansing, which led to a reduction in data inconsistency."
+      }
+    },
+    "tecfenix": {
+      "title": "Software Engineer",
+      "description": {
+        "1": "Achieved a 20% throughput improvement by migrating a backend API from .NET Framework to .NET Core 1.1.",
+        "2": "eveloped a QR code scanner in C# for the company warehouse management system using the ImageSharp library, streamlining product identification and inventory management."
+      }
+    }
+  },
+  "projects": {
+    "blog": {
+      "title": "jsantanders.dev",
+      "description": "My personal website and blog. Built with Next.js and MDX"
+    },
+    "learning": {
+      "title": "learning.jsantanders.dev",
+      "description": "Solutions to problems found in books I’m reading"
+    },
+    "ddd": {
+      "title": "modular-monolith-nestjs",
+      "description": "A Modular Monolith application with Domain-Driven Design approach. Using NestJS as a backend framework."
+    }
+  },
+  "switcher": {
+    "label": "Change language",
+    "en": "English",
+    "es": "Spanish"
+  },
+  "present": "Present",
+  "seeMore": "See more",
+  "seeLess": "See less",
+  "theme": {
+    "label": "Change theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "months": {
+    "jan": "Jan",
+    "feb": "Feb",
+    "mar": "Mar",
+    "apr": "Apr",
+    "may": "May",
+    "jun": "Jun",
+    "jul": "Jul",
+    "ago": "Ago",
+    "sep": "Sep",
+    "oct": "Oct",
+    "nov": "Nov",
+    "dec": "Dec"
+  }
+}

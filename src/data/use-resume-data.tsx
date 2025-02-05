@@ -6,8 +6,13 @@ import NavicuLogo from "@/images/logos/navicu-logo.png";
 import TecFenixLogo from "@/images/logos/tecfenix-logo.png";
 import UniversityOfCaraboboLogo from "@/images/logos/uc.png";
 import AzureDeveloperBadge from "@/images/logos/microsoft-certified-associate-badge.svg";
-import { GitHubLogoIcon, HomeIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
+import RollkallLogo from "@/images/logos/rollkall-logo.png";
+
 import { useTranslations } from "next-intl";
+import { GithubIcon } from "@/components/icons/github-icon";
+import { HomeIcon } from "lucide-react";
+import { XIcon } from "@/components/icons/x-icon";
+import { LinkedInIcon } from "@/components/icons/linkedin-icon";
 
 export const useResumeData = () => {
   const t = useTranslations();
@@ -18,7 +23,8 @@ export const useResumeData = () => {
     location: "Valencia, VE, EST",
     about: t("about"),
     summary: t("summary"),
-    locationLink: "https://www.google.com/maps/place/Valencia,+Carabobo,+Venezuela",
+    locationLink:
+      "https://www.google.com/maps/place/Valencia,+Carabobo,+Venezuela",
     avatarUrl: "https://avatars.githubusercontent.com/u/15827589?v=4",
     personalWebsiteUrl: "https://jsantanders.dev",
     contact: {
@@ -26,17 +32,17 @@ export const useResumeData = () => {
         {
           name: "GitHub",
           url: "https://github.com/jsantanders",
-          icon: GitHubLogoIcon,
+          icon: GithubIcon,
         },
         {
           name: "LinkedIn",
           url: "https://www.linkedin.com/in/jsantanders/",
-          icon: LinkedInLogoIcon,
+          icon: LinkedInIcon,
         },
         {
           name: "X",
           url: "https://x.com/jsantanders",
-          icon: TwitterLogoIcon,
+          icon: XIcon,
         },
         {
           name: "Website",
@@ -78,48 +84,67 @@ export const useResumeData = () => {
         link: "https://www.researchgate.net/publication/321062609_Procedure_for_access_to_the_ERS_and_ENVISAT_mission_data_through_the_ESA_portal_and_the_interactive_tool_EOLI-SA",
       },
     ],
-    work: [
+    jobs: [
+      {
+        company: "Rollkall",
+        link: "https://www.linkedin.com/company/rollkall",
+        badges: [t("remote")],
+        title: t("work.rollkall.title"),
+        logo: RollkallLogo,
+        start: `${t("months.jan")} 2024`,
+        end: t("present"),
+        description: [
+          t("work.rollkall.description.1"),
+          t("work.rollkall.description.2"),
+          t("work.rollkall.description.3"),
+        ],
+        skills: [".NET", "TypeScript", "React", "Azure"],
+      },
       {
         company: "Laika",
         link: "https://www.linkedin.com/company/laika-app",
-        badges: ["Remote"],
+        badges: [t("remote")],
         title: t("work.laika.title"),
         logo: LaikaLogo,
-        start: "Oct 2022",
-        end: t("present"),
+        start: `${t("months.oct")} 2022`,
+        end: `${t("months.jan")} 2024`,
         description: [
           t("work.laika.description.1"),
           t("work.laika.description.2"),
           t("work.laika.description.3"),
         ],
+        skills: ["Node", "TypeScript", "React", "AWS"],
       },
       {
         company: "Microsoft",
         link: "https://www.linkedin.com/company/microsoft",
-        badges: ["Remote", "Vendor"],
+        badges: [t("remote")],
         title: t("work.microsoft.title"),
         logo: MicrosoftLogo,
-        start: "Apr 2021",
-        end: "Sep 2022",
+        start: `${t("months.apr")} 2021`,
+        end: `${t("months.sep")} 2022`,
         description: [
           t("work.microsoft.description.1"),
           t("work.microsoft.description.2"),
           t("work.microsoft.description.3"),
         ],
+        skills: [".NET", "TypeScript", "React", "Azure"],
       },
       {
         company: "Alphas",
         link: "https://alphasremote.team/",
-        badges: ["Remote"],
+        badges: [t("remote")],
         title: t("work.alphas.title"),
         logo: AlphasLogo,
-        start: "Jun 2019",
-        end: "Mar 2021",
+        start: `${t("months.jun")} 2019`,
+        end: `${t("months.mar")} 2021`,
         description: [
           t("work.alphas.description.1"),
           t("work.alphas.description.2"),
           t("work.alphas.description.3"),
+          t("work.alphas.description.4"),
         ],
+        skills: [".NET", "TypeScript", "React", "Azure"],
       },
       {
         company: "Ferrisoft",
@@ -127,9 +152,10 @@ export const useResumeData = () => {
         link: "https://www.linkedin.com/company/ferrisoft/",
         title: t("work.ferrisoft.title"),
         logo: FerrisoftLogo,
-        start: "Jan 2018",
-        end: "May 2019",
-        description: [t("work.ferrisoft.description.1"), t("work.ferrisoft.description.2")],
+        start: `${t("months.jan")} 2018`,
+        end: `${t("months.may")} 2019`,
+        description: [t("work.ferrisoft.description.1")],
+        skills: [".NET"],
       },
       {
         company: "Navicu",
@@ -137,9 +163,13 @@ export const useResumeData = () => {
         link: "https://navicu.com/",
         title: t("work.ferrisoft.title"),
         logo: NavicuLogo,
-        start: "Jan 2017",
-        end: "Dec 2017",
-        description: [t("work.navicu.description.1")],
+        start: `${t("months.jan")} 2017`,
+        end: `${t("months.dec")} 2019`,
+        description: [
+          t("work.navicu.description.1"),
+          t("work.navicu.description.2"),
+        ],
+        skills: ["Node"],
       },
       {
         company: "Tecfenix",
@@ -147,9 +177,13 @@ export const useResumeData = () => {
         link: "http://www.tecfenix.com/",
         title: t("work.tecfenix.title"),
         logo: TecFenixLogo,
-        start: "Jan 206",
-        end: "Dec 2016",
-        description: [t("work.tecfenix.description.1")],
+        start: `${t("months.jan")} 2016`,
+        end: `${t("months.dec")} 2016`,
+        description: [
+          t("work.tecfenix.description.1"),
+          t("work.tecfenix.description.2"),
+        ],
+        skills: [".NET"],
       },
     ],
     skills: [
@@ -158,8 +192,8 @@ export const useResumeData = () => {
       "React/Next.js/Remix",
       "Node.js",
       ".NET/C#/ASP.NET",
-      "Go",
-      "Rust",
+      "Go/Gin",
+      "Rust/Axum",
     ],
     projects: [
       {

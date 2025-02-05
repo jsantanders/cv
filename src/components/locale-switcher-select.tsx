@@ -1,9 +1,9 @@
 "use client";
 
-import { ReactNode, useTransition } from "react";
-import clsx from "clsx";
+import { type ReactNode, useTransition } from "react";
 import { Select, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { usePathname, useRouter } from "@/lib/navigation";
+import { cn } from "@/lib/utils";
+import { usePathname, useRouter } from "@/i18n/routing";
 
 type Props = {
   children: ReactNode;
@@ -25,10 +25,10 @@ export function LocaleSwitcherSelect({ children, defaultValue, label }: Props) {
   return (
     <Select onValueChange={onSelectChange} defaultValue={defaultValue}>
       <SelectTrigger
-        className={clsx(
+        className={cn(
           "relative text-muted-foreground",
           isPending && "transition-opacity [&:disabled]:opacity-30",
-          "w-[120px]"
+          "w-[120px]",
         )}
       >
         <SelectValue placeholder={label} />

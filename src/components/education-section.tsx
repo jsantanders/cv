@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
-import { Section } from "@/components/ui/section";
+import { Section } from "./section";
 import { useResumeData } from "@/data/use-resume-data";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -9,13 +9,16 @@ export const EducationSection = () => {
   const resumeData = useResumeData();
 
   return (
-    <Section>
-      <h2 className="text-xl font-bold">{t("sections.education")}</h2>
+    <Section title={t("sections.education")}>
       {resumeData.education.map((education) => {
         return (
-          <div className="flex flex-row justify-between">
+          <div key={education.degree} className="flex flex-row justify-between">
             <div className="flex flex-row items-center gap-x-1">
-              <Image className="h-12 w-12" alt={education.degree} src={education.logo} />
+              <Image
+                className="h-12 w-12"
+                alt={education.degree}
+                src={education.logo}
+              />
               <Card key={education.school}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">

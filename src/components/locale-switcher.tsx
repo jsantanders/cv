@@ -1,18 +1,18 @@
 import { useLocale, useTranslations } from "next-intl";
 
 import { SelectContent, SelectItem } from "@/components/ui/select";
-import { locales } from "@/i18n";
 
 import { LocaleSwitcherSelect } from "./locale-switcher-select";
+import { routing } from "@/i18n/routing";
 
 export default function LocaleSwitcher() {
   const t = useTranslations("switcher");
-  const locale = useLocale() as any;
+  const locale = useLocale();
 
   return (
-    <LocaleSwitcherSelect defaultValue={locale} label={t(locale)}>
+    <LocaleSwitcherSelect defaultValue={locale} label={t("label")}>
       <SelectContent>
-        {locales.map((lang: any) => (
+        {routing.locales.map((lang) => (
           <SelectItem key={lang} value={lang}>
             {t(lang)}
           </SelectItem>

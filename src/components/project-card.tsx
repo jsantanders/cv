@@ -19,24 +19,24 @@ export function ProjectCard({ title, description, tags, link }: Props) {
     <Card className="flex flex-col overflow-hidden border border-muted p-3">
       <CardHeader className="">
         <div className="space-y-1">
-          <CardTitle className="text-base">
+          <CardTitle className="text-base hover:[&_a]:underline hover:[&_a]:underline-offset-4">
             {link ? (
               <a
                 href={link}
                 target="_blank"
-                className="inline-flex items-center gap-1 hover:underline"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1"
               >
-                {title}{" "}
-                <span className="h-1 w-1 rounded-full bg-green-500"></span>
+                {title} <span className="h-1 w-1 rounded-full bg-green-500" />
               </a>
             ) : (
               title
             )}
           </CardTitle>
-          <div className="hidden font-mono text-xs underline print:visible">
+          <div className="hidden font-space-mono text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
-          <CardDescription className="font-mono text-xs">
+          <CardDescription className="font-space-mono text-xs">
             {description}
           </CardDescription>
         </div>

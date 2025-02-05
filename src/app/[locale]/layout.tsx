@@ -1,29 +1,44 @@
-import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { Inter } from "next/font/google";
+import { Space_Grotesk, Space_Mono } from "next/font/google";
+
+import { NextIntlClientProvider } from "next-intl";
+import { routing } from "@/i18n/routing";
+import { notFound } from "next/navigation";
+import { getMessages, setRequestLocale } from "next-intl/server";
 
 import "./globals.css";
-import { ThemeProvider } from "@/components/ui/theme-provider";
-import { locales } from "@/i18n";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { ThemeProvider } from "@/components/theme-provider";
 
-// If loading a variable font, you don't need to specify the font weight
-const inter = Inter({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-space-grotesk",
 });
 
-export default function RootLayout({
+const spaceMono = Space_Mono({ weight: "400", variable: "--font-space-mono" });
+
+export default async function RootLayout({
+  params,
   children,
-  params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  unstable_setRequestLocale(locale);
+  const locale = (await params).locale;
+
+  // biome-ignore lint/suspicious/noExplicitAny: yolo
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
+  setRequestLocale(locale);
+  const messages = await getMessages();
 
   return (
-    <html lang={locale} className={inter.className}>
+    <html
+      lang={locale}
+      className={`${spaceGrotesk.variable} ${spaceMono.variable}`}
+    >
       <body>
         <ThemeProvider
           attribute="class"
@@ -31,7 +46,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <NextIntlClientProvider messages={messages}>
+            {children}
+          </NextIntlClientProvider>
         </ThemeProvider>
       </body>
       <Analytics />
@@ -40,5 +57,5 @@ export default function RootLayout({
 }
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return routing.locales.map((locale) => ({ locale }));
 }
