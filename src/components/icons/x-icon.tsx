@@ -7,9 +7,9 @@ export const XIcon = ({ className }: { className?: string }) => {
       viewBox="0 0 24 24"
       fill="currentColor"
       stroke="none"
-      stroke-width="1"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className={className}
     >
       <title>X</title>

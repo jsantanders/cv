@@ -1,52 +1,49 @@
-import LaikaLogo from "@/images/logos/laika-logo.png";
-import MicrosoftLogo from "@/images/logos/microsoft-logo.png";
-import AlphasLogo from "@/images/logos/alphas-logo.png";
-import FerrisoftLogo from "@/images/logos/ferrisoft-logo.png";
-import NavicuLogo from "@/images/logos/navicu-logo.png";
-import TecFenixLogo from "@/images/logos/tecfenix-logo.png";
-import UniversityOfCaraboboLogo from "@/images/logos/uc.png";
-import AzureDeveloperBadge from "@/images/logos/microsoft-certified-associate-badge.svg";
-import RollkallLogo from "@/images/logos/rollkall-logo.png";
-
 import { useTranslations } from "next-intl";
 import { GithubIcon } from "@/components/icons/github-icon";
 import { HomeIcon } from "lucide-react";
 import { XIcon } from "@/components/icons/x-icon";
 import { LinkedInIcon } from "@/components/icons/linkedin-icon";
 
+import StandfordLogo from "@/images/logos/standford.png";
+import MitLogo from "@/images/logos/mit.png";
+import AwsLogo from "@/images/logos/aws_cert.png";
+import OracleLogo from "@/images/logos/oracle.png";
+import RedhatLogo from "@/images/logos/redhat.png";
+import MongoDbLogo from "@/images/logos/mongodb.webp";
+import IntelLogo from "@/images/logos/intel.png";
+
 export const useResumeData = () => {
   const t = useTranslations();
 
   return {
-    name: "Jesus Santander",
-    initials: "JS",
-    location: "Valencia, VE, EST",
+    name: t("name"),
+    initials: "AS",
+    location: "Seattle, WA, PST",
     about: t("about"),
     summary: t("summary"),
     locationLink:
-      "https://www.google.com/maps/place/Valencia,+Carabobo,+Venezuela",
-    avatarUrl: "https://avatars.githubusercontent.com/u/15827589?v=4",
-    personalWebsiteUrl: "https://jsantanders.dev",
+      "https://www.google.com/maps/place/Seattle,+WA,+USA/@47.608715,-122.3397979,11z/data=!3m1!4b1!4m6!3m5!1s0x5490102c93e83355:0x102565466944d59a!8m2!3d47.6061389!4d-122.3328481!16zL20vMGQ5anI?entry=ttu&g_ep=EgoyMDI1MDIwNC4wIKXMDSoASAFQAw%3D%3D",
+    avatarUrl: "/images/thispersondoesnotexist.jpg",
     contact: {
       social: [
         {
           name: "GitHub",
-          url: "https://github.com/jsantanders",
+          url: "https://github.com/#",
           icon: GithubIcon,
         },
         {
           name: "LinkedIn",
-          url: "https://www.linkedin.com/in/jsantanders/",
+          url: "https://www.linkedin.com/in/#",
           icon: LinkedInIcon,
         },
         {
           name: "X",
-          url: "https://x.com/jsantanders",
+          url: "https://x.com/#",
           icon: XIcon,
         },
         {
           name: "Website",
-          url: "https://jsantanders.dev",
+          url: "www.example.com/#",
           icon: HomeIcon,
         },
       ],
@@ -57,23 +54,23 @@ export const useResumeData = () => {
         degree: t("education.master.degree"),
         start: "2022",
         end: t("present"),
-        logo: UniversityOfCaraboboLogo,
+        logo: MitLogo,
       },
       {
         school: t("education.bachelor.school"),
         degree: t("education.bachelor.degree"),
         start: "2010",
         end: "2015",
-        logo: UniversityOfCaraboboLogo,
+        logo: StandfordLogo,
       },
     ],
     certifications: [
       {
-        issuer: t("certifications.azure.issuer"),
+        issuer: t("certifications.aws.issuer"),
         date: "2023",
-        title: t("certifications.azure.title"),
-        badge: AzureDeveloperBadge,
-        link: "https://learn.microsoft.com/api/credentials/share/en-us/jsantanders/99E494EC83B32890?sharingId=889F6D6C033C9537",
+        title: t("certifications.aws.title"),
+        badge: AwsLogo,
+        link: "https://example.com/cert",
       },
     ],
     publications: [
@@ -81,146 +78,106 @@ export const useResumeData = () => {
         title: t("publications.1.title"),
         publisher: t("publications.1.publisher"),
         date: "Aug 1, 2017",
-        link: "https://www.researchgate.net/publication/321062609_Procedure_for_access_to_the_ERS_and_ENVISAT_mission_data_through_the_ESA_portal_and_the_interactive_tool_EOLI-SA",
+        link: "https://www.example.com/pub",
       },
     ],
     jobs: [
       {
-        company: "Rollkall",
-        link: "https://www.linkedin.com/company/rollkall",
+        company: "Oracle",
+        link: "https://www.linkedin.com/company/oracle",
         badges: [t("remote")],
-        title: t("work.rollkall.title"),
-        logo: RollkallLogo,
+        title: t("work.oracle.title"),
+        logo: OracleLogo,
         start: `${t("months.jan")} 2024`,
         end: t("present"),
         description: [
-          t("work.rollkall.description.1"),
-          t("work.rollkall.description.2"),
-          t("work.rollkall.description.3"),
+          t("work.oracle.description.1"),
+          t("work.oracle.description.2"),
+          t("work.oracle.description.3"),
         ],
-        skills: [".NET", "TypeScript", "React", "Azure"],
+        skills: ["C++", "Rust", "Database Optimization", "Distributed Systems"],
       },
       {
-        company: "Laika",
-        link: "https://www.linkedin.com/company/laika-app",
+        company: "Red Hat",
+        link: "https://www.linkedin.com/company/redhat",
         badges: [t("remote")],
-        title: t("work.laika.title"),
-        logo: LaikaLogo,
+        title: t("work.redhat.title"),
+        logo: RedhatLogo,
         start: `${t("months.oct")} 2022`,
         end: `${t("months.jan")} 2024`,
         description: [
-          t("work.laika.description.1"),
-          t("work.laika.description.2"),
-          t("work.laika.description.3"),
+          t("work.redhat.description.1"),
+          t("work.redhat.description.2"),
+          t("work.redhat.description.3"),
         ],
-        skills: ["Node", "TypeScript", "React", "AWS"],
+        skills: ["Rust", "Linux Kernel", "Distributed File Systems"],
       },
       {
-        company: "Microsoft",
-        link: "https://www.linkedin.com/company/microsoft",
+        company: "MongoDB",
+        link: "https://www.linkedin.com/company/mongodb",
         badges: [t("remote")],
-        title: t("work.microsoft.title"),
-        logo: MicrosoftLogo,
+        title: t("work.mongodb.title"),
+        logo: MongoDbLogo,
         start: `${t("months.apr")} 2021`,
         end: `${t("months.sep")} 2022`,
         description: [
-          t("work.microsoft.description.1"),
-          t("work.microsoft.description.2"),
-          t("work.microsoft.description.3"),
+          t("work.mongodb.description.1"),
+          t("work.mongodb.description.2"),
+          t("work.mongodb.description.3"),
         ],
-        skills: [".NET", "TypeScript", "React", "Azure"],
+        skills: ["C++", "Rust", "Database Engines", "Query Optimization"],
       },
       {
-        company: "Alphas",
-        link: "https://alphasremote.team/",
+        company: "Intel",
+        link: "https://www.linkedin.com/company/intel",
         badges: [t("remote")],
-        title: t("work.alphas.title"),
-        logo: AlphasLogo,
+        title: t("work.intel.title"),
+        logo: IntelLogo,
         start: `${t("months.jun")} 2019`,
         end: `${t("months.mar")} 2021`,
         description: [
-          t("work.alphas.description.1"),
-          t("work.alphas.description.2"),
-          t("work.alphas.description.3"),
-          t("work.alphas.description.4"),
+          t("work.intel.description.1"),
+          t("work.intel.description.2"),
+          t("work.intel.description.3"),
         ],
-        skills: [".NET", "TypeScript", "React", "Azure"],
-      },
-      {
-        company: "Ferrisoft",
-        badges: [],
-        link: "https://www.linkedin.com/company/ferrisoft/",
-        title: t("work.ferrisoft.title"),
-        logo: FerrisoftLogo,
-        start: `${t("months.jan")} 2018`,
-        end: `${t("months.may")} 2019`,
-        description: [t("work.ferrisoft.description.1")],
-        skills: [".NET"],
-      },
-      {
-        company: "Navicu",
-        badges: [],
-        link: "https://navicu.com/",
-        title: t("work.ferrisoft.title"),
-        logo: NavicuLogo,
-        start: `${t("months.jan")} 2017`,
-        end: `${t("months.dec")} 2019`,
-        description: [
-          t("work.navicu.description.1"),
-          t("work.navicu.description.2"),
-        ],
-        skills: ["Node"],
-      },
-      {
-        company: "Tecfenix",
-        badges: [],
-        link: "http://www.tecfenix.com/",
-        title: t("work.tecfenix.title"),
-        logo: TecFenixLogo,
-        start: `${t("months.jan")} 2016`,
-        end: `${t("months.dec")} 2016`,
-        description: [
-          t("work.tecfenix.description.1"),
-          t("work.tecfenix.description.2"),
-        ],
-        skills: [".NET"],
+        skills: ["C++", "Rust", "Hardware Acceleration", "Real-Time Systems"],
       },
     ],
     skills: [
-      "JavaScript",
-      "TypeScript",
-      "React/Next.js/Remix",
-      "Node.js",
-      ".NET/C#/ASP.NET",
-      "Go/Gin",
-      "Rust/Axum",
+      "C++",
+      "Rust",
+      "Database Engines",
+      "Distributed Systems",
+      "Linux Kernel",
+      "Query Optimization",
+      "Real-Time Systems",
     ],
     projects: [
       {
-        title: t("projects.blog.title"),
-        techStack: ["Side Project", "TypeScript", "Next.js", "MDX"],
-        description: t("projects.blog.description"),
+        title: t("projects.database.title"),
+        techStack: ["Side Project", "Rust", "Database Engine"],
+        description: t("projects.database.description"),
         link: {
-          label: "jsantanders.dev",
-          href: "https://jsantanders.dev/",
+          label: "example.com",
+          href: "https://example.com/rustdb",
         },
       },
       {
-        title: t("projects.learning.title"),
-        techStack: ["Side Project", "Quarto", "R", "Statistics"],
-        description: t("projects.learning.description"),
+        title: t("projects.compiler.title"),
+        techStack: ["Side Project", "C++", "Static Analysis"],
+        description: t("projects.compiler.description"),
         link: {
-          label: "learning.jsantanders.dev",
-          href: "https://learning.jsantanders.dev/",
+          label: "example.com",
+          href: "https://example.com/cpp-analyzer",
         },
       },
       {
-        title: t("projects.ddd.title"),
-        techStack: ["Side Project", "Nest.js", "DDD", "CQRS"],
-        description: t("projects.ddd.description"),
+        title: t("projects.os.title"),
+        techStack: ["Side Project", "Rust", "Microkernel"],
+        description: t("projects.os.description"),
         link: {
-          label: "github.com",
-          href: "https://github.com/jsantanders/modular-monolith-nestjs",
+          label: "example.com",
+          href: "https://example.com/microkernel-os",
         },
       },
     ],

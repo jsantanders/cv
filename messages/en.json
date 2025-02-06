@@ -1,5 +1,6 @@
 {
-  "name": "Jesus Santander",
+  "name": "Alexander Sterling",
+  "initials": "AS",
   "sections": {
     "about": "About",
     "workExperience": "Work Experience",
@@ -10,97 +11,76 @@
     "projects": "Projects"
   },
   "remote": "Remote",
-  "about": "Node | React | .NET Senior Software Engineer. Distributed systems enthusiast",
-  "summary": "I am a full-stack developer with over 10 years of expertise in distributed computing, scalable architectures, cloud, and web applications.",
+  "about": "C++ | Rust System and Database Programmer. Passionate about high-performance computing and low-level systems design.",
+  "summary": "Experienced system programmer with 10+ years of expertise in C++ and Rust, specializing in database engines, distributed systems, and performance-critical applications.",
   "education": {
     "bachelor": {
-      "school": "University of Carabobo",
-      "degree": "B.Eng. Telecommunication Engineer"
+      "school": "Stanford University",
+      "degree": "B.Eng. in Computer Science"
     },
     "master": {
-      "school": "University of Carabobo",
-      "degree": "MSc. Applied Mathematics"
+      "school": "MIT",
+      "degree": "MSc. in Systems Engineering"
     }
   },
   "certifications": {
-    "azure": {
-      "issuer": "Microsoft",
-      "title": "Azure Developer - Associate"
+    "aws": {
+      "issuer": "Amazon Web Services",
+      "title": "Solution architect - Associate"
     }
   },
   "publications": {
     "1": {
-      "title": "Letter to the editor: Procedure for access to the ERS and ENVISAT missiondata through the ESA portal and the interactive tool EOLI-SA",
-      "publisher": "Revista Ingeniería UC"
+      "title": "Optimizing Database Engines for High-Performance Query Execution",
+      "publisher": "Journal of Systems Programming"
     }
   },
   "work": {
-    "rollkall": {
-      "title": "Senior Software Engineer",
+    "oracle": {
+      "title": "Senior Systems Programmer",
       "description": {
-        "1": "Built responsive React components for the Officer Portal, enabling officers to access essential features on devices where mobile apps are restricted.",
-        "2": "Developed asp.net endpoints and SQL stored procedures to migrate the invoicing system, improving functionality and ensuring a smooth transition.",
-        "3": "Migrated the \"Locations\" screen in the Client Portal, addressing bugs and maintaining consistency across all the web portals."
+        "1": "Designed and implemented a high-performance query execution engine in C++, reducing query latency by 40%.",
+        "2": "Optimized database indexing algorithms, improving storage efficiency and retrieval speeds for large-scale datasets.",
+        "3": "Developed a custom memory allocator in Rust for database workloads, reducing memory fragmentation and improving throughput."
       }
     },
-    "laika": {
-      "title": "Senior Software Engineer",
+    "redhat": {
+      "title": "Systems Engineer",
       "description": {
-        "1": "Developed the new pet registration flow in the React Native app, resulting in a 20% increase in the number of users who categorize their pets, enabling the marketing team to create more targeted email campaigns and in-app offer discounts.",
-        "2": "Contributed into the migration of a monolithic PHP application to a microservices (Node.js + Nest) architecture using Docker and AWS Fargate, reducing downtime and improving scalability.",
-        "3": "Improved the Algolia faceted search and auto-complete functionality, improving search accuracy and reducing response time."
+        "1": "Contributed to the development of a distributed file system in Rust, improving fault tolerance and scalability.",
+        "2": "Enhanced kernel-level I/O operations for enterprise storage systems, achieving a 25% increase in read/write performance.",
+        "3": "Implemented a Rust-based toolchain for debugging and profiling low-level system processes, streamlining developer workflows."
       }
     },
-    "microsoft": {
-      "title": "Senior Software Engineer",
+    "mongodb": {
+      "title": "Database Engineer",
       "description": {
-        "1": "Developed accessible React components using techniques like server-side rendering, and lazy-loading, contributing to reduction in page load time and increase in website accessibility score.",
-        "2": "Configured Azure Cognitive Search features like semantic ranking and synonym mapping to enhance text-based query precision within the application.",
-        "3": "Implemented Entity Framework Core optimizations, including disabling change tracking for read-only queries and minimizing lazy loading, streamlining data interactions and improving application performance."
+        "1": "Refactored the storage engine in C++ to support multi-threaded operations, increasing transaction throughput by 30%.",
+        "2": "Developed a Rust-based query optimizer, reducing query planning time and improving execution efficiency.",
+        "3": "Integrated advanced caching mechanisms into the database engine, reducing disk I/O and improving response times."
       }
     },
-    "alphas": {
-      "title": "Senior Software Engineer → Lead Software Engineer",
-      "description": {
-        "1": "Reduced data processing time by implementing a message queuing system with RabbitMQ, enabling parallel processing and optimizing resource utilization. This resulted in a 30% increase in processing capacity.",
-        "2": "Refactored a legacy system into a modern microservices architecture using Azure technologies like App Service, Storage, Service Bus, Functions, CosmosDB, and AD B2C. This migration boosted system performance, significantly reducing response times and enabling enhanced scalability.",
-        "3": "Transferred an ASP.NET API handling 500 concurrent requests peak from an on-premise VM to Azure App Service, achieving a 15% cost reduction and enhanced scalability through automatic scaling and load balancing.",
-        "4": "Secured data exchange with the Colombian tax department (DIAN)   by configuring a WCF service. This involved implementing SSL encryption, user authentication, and access control mechanisms, ensuring adherence to strict data privacy regulations."
-      }
-    },
-    "ferrisoft": {
+    "intel": {
       "title": "Software Engineer",
       "description": {
-        "1": "Optimized Entity Framework queries for a high-traffic WPF workstation application, resulting in performance improvement and a reduction in average response time. This was achieved by disabling change tracking for read-only operations, implementing query caching, and leveraging stored procedures for frequently used queries."
-      }
-    },
-    "navicu": {
-      "title": "Software Engineer",
-      "description": {
-        "1": "Developed and customized Node.js BFFs (Backend for Frontend) for both web and mobile applications, tailoring API clients to their specific data and performance needs. ",
-        "2": "Performed a MySQL database normalization, involving table splitting, foreign key creation, and data cleansing, which led to a reduction in data inconsistency."
-      }
-    },
-    "tecfenix": {
-      "title": "Software Engineer",
-      "description": {
-        "1": "Achieved a 20% throughput improvement by migrating a backend API from .NET Framework to .NET Core 1.1.",
-        "2": "eveloped a QR code scanner in C# for the company warehouse management system using the ImageSharp library, streamlining product identification and inventory management."
+        "1": "Developed low-level C++ libraries for hardware-accelerated encryption, improving data security and performance.",
+        "2": "Optimized multi-threaded algorithms for CPU-bound workloads, achieving a 20% performance boost in critical applications.",
+        "3": "Collaborated on the design of a Rust-based framework for real-time data processing, enabling high-throughput analytics."
       }
     }
   },
   "projects": {
-    "blog": {
-      "title": "jsantanders.dev",
-      "description": "My personal website and blog. Built with Next.js and MDX"
+    "database": {
+      "title": "RustDB",
+      "description": "A lightweight, high-performance database engine written in Rust, designed for embedded systems."
     },
-    "learning": {
-      "title": "learning.jsantanders.dev",
-      "description": "Solutions to problems found in books I’m reading"
+    "compiler": {
+      "title": "C++ Static Analyzer",
+      "description": "A static analysis tool for C++ codebases, focusing on memory safety and performance optimizations."
     },
-    "ddd": {
-      "title": "modular-monolith-nestjs",
-      "description": "A Modular Monolith application with Domain-Driven Design approach. Using NestJS as a backend framework."
+    "os": {
+      "title": "Microkernel OS",
+      "description": "A minimalistic microkernel operating system written in Rust, designed for educational purposes."
     }
   },
   "switcher": {
@@ -125,7 +105,7 @@
     "may": "May",
     "jun": "Jun",
     "jul": "Jul",
-    "ago": "Ago",
+    "ago": "Aug",
     "sep": "Sep",
     "oct": "Oct",
     "nov": "Nov",
